@@ -1,0 +1,7 @@
+{
+  "name": "LoginBlank",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
