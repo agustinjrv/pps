@@ -1,0 +1,13 @@
+{
+  "appId": "conversando.en.el.Aula.AJR",
+  "appName": "Conversando en el aula",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 3000
+    }
+  },
+  "cordova": {}
+}
