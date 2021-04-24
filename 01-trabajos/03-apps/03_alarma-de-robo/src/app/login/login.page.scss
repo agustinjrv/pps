@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: column;    
+    height: 100%;
+    background-color: rgb(34, 31, 31);;
+  
+}
+
+.backgroundInput
+{
+    background: red;
+}
+
+.margin{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+ion-content.background{
+   // --background:white
+}
+

@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: column;    
+    height: 100%;  
+    background: rgb(117, 0, 252);
+}
+
+.backgroundInput
+{
+    background: red;
+}
+
+.margin{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+ion-content.background{
+   
+}
+
+.ripple-parent {
+    position: relative;
+    overflow: hidden;
+  }

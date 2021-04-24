@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;    
+    height: 100%;  
+    background-color:rgb(252, 0, 105);
+}
+
+.backgroundInput
+{
+    background: red;
+}
+
+.margin{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+ion-content.background{
+   
+}
+
+.ripple-parent {
+    position: relative;
+    overflow: hidden;
+  }
+
+
+  
+  @-webkit-keyframes shake-horizontal{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}10%,30%,50%,70%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}20%,40%,60%{-webkit-transform:translateX(10px);transform:translateX(10px)}80%{-webkit-transform:translateX(8px);transform:translateX(8px)}90%{-webkit-transform:translateX(-8px);transform:translateX(-8px)}}@keyframes shake-horizontal{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}10%,30%,50%,70%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}20%,40%,60%{-webkit-transform:translateX(10px);transform:translateX(10px)}80%{-webkit-transform:translateX(8px);transform:translateX(8px)}90%{-webkit-transform:translateX(-8px);transform:translateX(-8px)}}
+.animacion{
+    -webkit-animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both;animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both;
+}
