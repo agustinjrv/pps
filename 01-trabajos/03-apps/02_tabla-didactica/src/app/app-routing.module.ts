@@ -9,11 +9,7 @@ const routes: Routes = [
   {
     path: 'splash-animado',
     loadChildren: () => import('./splash-animado/splash-animado.module').then( m => m.SplashAnimadoPageModule)
-  },
-  {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
+    
   },
   {
     path: 'login',

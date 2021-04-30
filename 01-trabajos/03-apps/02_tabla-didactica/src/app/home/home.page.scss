@@ -1,10 +1,7 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  height: 100vh;
-  background-color: #3957DA
+.fondo {
+    height: 100%;
+    
+  background-color: #0d37f3
 }
 
 #container strong {
@@ -24,3 +21,4 @@
 #container a {
   text-decoration: none;
 }
+

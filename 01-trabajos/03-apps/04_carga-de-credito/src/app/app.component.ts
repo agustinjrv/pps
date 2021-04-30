@@ -23,7 +23,8 @@ export class AppComponent {
     this.platform.ready().then(() => {
       setTimeout(() => {
         SplashScreen.hide();
-        this.router.navigateByUrl('login');
+        this.router.navigateByUrl("splash-animado");
+        //this.router.navigateByUrl('login');
       }, 500);
     });
   }

@@ -6,7 +6,8 @@ import { SplashAnimadoPage } from './splash-animado.page';
 const routes: Routes = [
   {
     path: '',
-    component: SplashAnimadoPage
+    component: SplashAnimadoPage,
+    
   }
 ];
 

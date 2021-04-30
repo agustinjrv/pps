@@ -2,7 +2,10 @@
     display: flex;
     flex-direction: column;    
     height: 100%;
-    background-color: #3d57c7
+    background: url("https://blogs.iadb.org/desarrollo-infantil/wp-content/uploads/sites/18/2019/07/Post_PP-POSTEO.png") center;
+    background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
 }
 
 .backgroundInput
@@ -13,4 +16,8 @@
 .margin{
     margin-left: 2%;
     margin-right: 2%;
+}
+
+.imagen{
+
 }
