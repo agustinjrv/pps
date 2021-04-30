@@ -28,8 +28,7 @@ export class AppComponent implements OnInit{
   }
   ngOnInit()
   {
-   
-   this.router.navigateByUrl('splash-animado');
+    this.router.navigateByUrl('splash-animado');
 
   }
 }
