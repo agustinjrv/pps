@@ -1,7 +1,0 @@
-{
-  "name": "Alarma-De-Robo",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}

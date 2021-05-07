@@ -9,17 +9,18 @@ import { Vibration } from '@ionic-native/vibration/ngx';
 
 import { AuthService } from 'src/app/services/auth.service';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage implements OnInit{
 
   ///HTML
   showDialog: boolean = false;
   estado = '';
-  clave = '';
+  clave:string = '';
   presionado:boolean= false;
 
   //Sonidos

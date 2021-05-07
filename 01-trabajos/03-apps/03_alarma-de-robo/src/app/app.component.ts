@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Plugins } from '@capacitor/core';
 import { Platform } from '@ionic/angular';
+
 const { SplashScreen } = Plugins;
 
 
@@ -10,7 +11,7 @@ const { SplashScreen } = Plugins;
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   constructor(
     private platform: Platform,
     private router: Router
@@ -18,14 +19,18 @@ export class AppComponent {
     this.initializeApp();
   }
 
-  public initializeApp() 
-  {
-    this.platform.ready().then(() => {
+
+  initializeApp(){
+    this.platform.ready().then(() =>{
       setTimeout(() => {
-        SplashScreen.hide();
-        //this.router.navigateByUrl("login");
-        this.router.navigateByUrl('home');
-      }, 500);
+        SplashScreen.hide();    
+        this.router.navigateByUrl('splash');
+      }, 3000);
     });
   }
+
+  ngOnInit()
+  {
+  }
+
 }

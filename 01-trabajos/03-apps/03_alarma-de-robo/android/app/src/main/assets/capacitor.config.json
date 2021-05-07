@@ -1,6 +1,6 @@
 {
   "appId": "alarma.de.robo.AJR",
-  "appName": "Alarma de robo",
+  "appName": "Alarma De Robo",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",

@@ -1,26 +1,57 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  height: 100vh;
-  background-color: black;
+ion-card{
+  *{
+    color: white;
+  }
+  //position: fixed;
+  border-radius: 5%;
+  top: 5%;
+  
+  width: 24em;
+  height: 13em;
+
+  //align-items: center;
+  background-color: rgb(0, 0, 255);
+
+  .txtVerificacion{
+    font-size: 100%;
+    margin-left: 40%;
+  }
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-grid{
+  ion-row{
+    //align-items: center;
+    margin-top: 50%;
+    margin-left: 18%;
+  }
+
+#btnStart, #btnStop{
+  //position: absolute;
+  
+  //margin-top: 60%;
+  //margin-left: 20%;
+  color: rgb(255, 255, 255);
+  border-radius: 10%;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
 
-  color: #8c8c8c;
-
-  margin: 0;
+#btnStart{
+  
+  width: 13em;
+  height: 13em;
+  margin-top: 10%;
 }
 
-#container a {
-  text-decoration: none;
+#btnStop{    
+  width: 13em;
+  height: 13em;
+  
 }
+.textInfo{
+  color: white;
+  font-size: 140%;
+}
+
+
+}
+
