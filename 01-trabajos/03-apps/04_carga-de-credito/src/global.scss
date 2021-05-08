@@ -25,3 +25,16 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+
+.toast-custom-class {
+    --color:#ffffff;
+    --border-color:#000000;
+    --border-radius:1px;
+    --border-width:1px;    
+    --background: red;
+    --box-shadow: 2px;
+}
+
+ion-content{
+    --background: rgb(49, 153, 238);    
+    }

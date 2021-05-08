@@ -1,4 +1,4 @@
-package carga.de.credito.AJR;
+package carga.credito.ls;
 
 import android.os.Bundle;
 

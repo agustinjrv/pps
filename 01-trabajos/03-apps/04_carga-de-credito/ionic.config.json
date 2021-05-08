@@ -1,5 +1,5 @@
 {
-  "name": "Carga de credito",
+  "name": "cargaCredito",
   "integrations": {
     "capacitor": {}
   },

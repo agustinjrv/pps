@@ -7,18 +7,19 @@ import { Router } from '@angular/router';
   styleUrls: ['./splash-animado.page.scss'],
 })
 export class SplashAnimadoPage implements OnInit {
-
   constructor(
     private router: Router
-  ) {}
-
-  ngOnInit(): void {
-    setTimeout(()=>{
-     //this.router.navigateByUrl("home");
-     this.router.navigateByUrl('login');
-    },4000);
-    
+  ) {
     
   }
 
+  ngOnInit(): void {
+    
+    setTimeout(()=>{
+
+      this.router.navigate(["/login"],{replaceUrl: true});
+    },3000);
+    
+    
+  }
 }

@@ -1,45 +1,68 @@
-<ion-header >
-  <ion-toolbar color="tertiary">
-    <ion-title>Login</ion-title>
-
-    <ion-buttons slot="end">
-      <ion-button>
-        Registrarse
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true" class="background" > 
-
-  <div class="container">
-
-    <ion-item style="margin-top: 10%;" class="margin" color="tertiary" >
-      <ion-label position="stacked">Correo</ion-label>
-      <ion-input type="email" placeholder="Ingrese su Correo"  [(ngModel)]="user.email"></ion-input>
-    </ion-item>
-    
-    <ion-item  class="margin" color="tertiary" >
-      <ion-label position="stacked">Password</ion-label>
-      <ion-input type="Password" placeholder="Ingrese su contraseña" [(ngModel)]="user.password"></ion-input>
-    </ion-item>
 
 
-    <section style="margin-top: 5%;">
-      <div align="center" style="margin-bottom: 10%;">
-        <img src="assets/splashAnimado.svg" alt="" style="width: 100px;height: 100px; border-radius: 50%; background-color: blue;">
-      </div>
+<ion-content [fullscreen]="true" padding class="background" >
+
+
+  <div id="container" >
+
+
+    <section class="container" >
       
-      <ion-row>
-        <ion-col>
-          <ion-button class="margin" color="tertiary" size="block" (click)="onLogin()">Ingresar</ion-button>
-        </ion-col>
-        
-      </ion-row>
-      
+      <form action="" class="form-control h-100 " style="background-color: rgb(62, 216, 126); border-color: rgb(62, 216, 126); ">
+        <h1 class="titulo text-white" style="text-shadow: 2px 1px black;" >Bienvenido</h1>
+        <div align="left">
+          <label for="textCorreo" class="text-white text-left " style="text-shadow: 2px 1px black;" >Correo:</label>
+        </div>
+          <div class="form-row ">
+              <div class="col input-group mb-2">
+                  <label for="textCorreo" class="mt-1 fas fa-envelope input-group-text"></label>
+                  <input type="text" id="textCorreo" [(ngModel)]="user.email" [ngModelOptions]="{standalone: true}" class="form-control form-text"  placeholder="Ingrese su correo">
+              </div>
+          </div>
+          
+          <div align="left">
+            <label for="textContraseña" class="text-white mt-3" style="text-shadow: 2px 1px black;">Contraseña:</label>
+          </div>
+          <div class="form-row ">
+              <div class="col input-group mb-2">
+                  <label for="textContraseña" class="mt-1 fas fa-key input-group-text"></label>
+                  <input type="password" id="textContraseña" [(ngModel)]="user.password"  [ngModelOptions]="{standalone: true}" class="form-control form-text"  placeholder="Ingrese su correo">
+              </div>
+          </div>
+
+          <section class="mt-3">
+            <div class="row">
+              <div class="col">
+                <button class="btn btn-primary btn-block" (click)="onLogin()" >Ingresar</button>
+              </div>
+              <div class="col">
+                <button class="btn btn-warning btn-block" (click)="onLogin()" >Registrarse</button>
+              </div>
+            </div>
+          </section>
+          
+
+          <div id="errorLogin" class="mb-2 text-left" style="height: 20px;width: 800px;">
+            <strong><h6 id="msjError"></h6></strong>
+          </div>
+          
+          
+      </form>
+
     </section>
-  
   </div>
 
-</ion-content>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="success">
+      <ion-icon name="person"></ion-icon>
+    </ion-fab-button>
+  <ion-fab-list side="start">
+    <ion-fab-button (click)="login_Admin()"><ion-icon src="assets/animales/mono.svg"></ion-icon></ion-fab-button>
+    <ion-fab-button (click)="login_Invitado()"><ion-icon src="assets/animales/leon.svg"></ion-icon></ion-fab-button>
+    <ion-fab-button (click)="login_Usuario()"><ion-icon src="assets/animales/gato.svg"></ion-icon></ion-fab-button>
+    <ion-fab-button (click)="login_Anonimo()"><ion-icon src="assets/animales/perro.svg"></ion-icon></ion-fab-button>
+    <ion-fab-button (click)="login_Tester()"><ion-icon src="assets/animales/pajaro.svg"></ion-icon></ion-fab-button>
+  </ion-fab-list>
+</ion-fab>
 
+</ion-content>

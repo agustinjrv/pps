@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-button fill="solid" slot="end" size="default" color="dark" (click)="Logout()" style="margin: 10px;">
+      Cerrar Sesión
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <section class=" mt-3" >
+      
+    <form action="" class="form-control h-100  border-primary pb-3" style="background-color: rgb(62, 216, 126);">
+
+      <div style="height: 200px;">
+          <h1 class="text-white text-center" style="text-shadow: 2px 1px black;" >Saldo Actual:</h1>
+      
+          <div class="form-row mt-2">
+              <div class="col" >
+                <div id="credito" class="text-left ">
+                  <h1 class="credito  text-center" >${{unUsuario.credito}} </h1>
+                </div>
+              </div>
+          </div>
+      </div>
+      
+    </form>
+
+  </section>  
+
+  <section style="height: 50px;">
+    <ion-card color="light">
+      <div *ngIf="scannedBarCode"><!--scannedBarCode-->
+        <ion-item color="light">
+          Cantidad a cargar: <strong>{{ this.monto }}</strong>
+        </ion-item>
+        <div >
+          <ion-button color="dark" expand="block" class="ml-3 mr-3" (click)="CargarCredito()">
+            Confirmar
+          </ion-button>
+        </div>
+      </div>
+    </ion-card>
+  </section>
+  
+
+  <section>
+
+    <div class="row mt-5">
+      <div class="col"> 
+        <ion-button color="success" expand="full" size="large" (click)="scanBRcode()"><span class="text-dark">Recarga con QR<ion-icon name="camera"></ion-icon></span></ion-button>
+      </div>
+    </div>
+    
+   <div class="row mt-2">
+     <div class="col"> 
+      <ion-button color="warning" expand="full" size="large" (click)="eliminarCreditos()" ><span class="text-dark">Eliminar Creditos</span></ion-button>
+      
+     </div>
+   </div>
+
+  </section>
+
+
+  
+
+
+
+
+
+</ion-content>
