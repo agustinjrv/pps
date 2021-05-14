@@ -24,10 +24,10 @@ export class HomePage implements OnInit{
   presionado:boolean= false;
 
   //Sonidos
-  audioIzquierda = "../../assets/sonidos/audioIzquierda.wav";
-  audioDerecha = "../../assets/sonidos/audioDerecha.wav";
-  audioVertical = "../../assets/sonidos/audioVertical.wav";
-  audioHorizontal = "../../assets/sonidos/audioHorizontal.wav";
+  audioIzquierda = "../../assets/sonidos/audioIzquierda.ogg";
+  audioDerecha = "../../assets/sonidos/audioDerecha.ogg";
+  audioVertical = "../../assets/sonidos/audioVertical.mp3";
+  audioHorizontal = "../../assets/sonidos/audioHorizontal.mp3";
   audio = new Audio();
 
   ///DESARROLLAR

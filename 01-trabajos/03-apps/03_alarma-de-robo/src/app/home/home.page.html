@@ -27,19 +27,14 @@
           <ion-img src="assets/escudoActivado.svg"  *ngIf="presionado" name="pause" id="btnStart" (click)="btnActivarODesactivar()"></ion-img>
           <br>
           <ion-label class="textInfo" style="font-size: 120%;" *ngIf="presionado">Presione para desactivar</ion-label>
-          <ion-img src="assets/escudoDesactivado.svg"  *ngIf="!presionado" id="btnStop"
-          (click)="btnActivarODesactivar()"></ion-img>
+          <ion-img src="assets/escudoDesactivado.svg"  *ngIf="!presionado" id="btnStop" (click)="btnActivarODesactivar()"></ion-img>
             <br>
             <ion-label class="textInfo"  *ngIf="!presionado">Presione para iniciar</ion-label>
         </ion-col>
   
         
         
-          <ion-row>
-            <ion-col>
-              <ion-text class="textInfo" >{{this.posicionActualCelular}}</ion-text>
-            </ion-col>
-          </ion-row>
+          
         
       </ion-row>
       <br>

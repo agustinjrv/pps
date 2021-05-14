@@ -16,12 +16,13 @@ import { AuthService } from '../services/auth.service';
 export class LoginPage implements OnInit {
 
   users =[
-    {"email":"uno@gmail.com","clave":"123456"},
-    {"email":"jorge@gmail.com","clave":"123456"},
-    {"email":"juan@gmail.com","clave":"123456"},
-    {"email":"admin@gmail.com","clave":"123456"},
-    {"email":"ana@gmail.com","clave":"123456"}
+    {"email":"admin@admin.com","clave":"111111"},
+    {"email":"invitado@invitado.com","clave":"222222"},
+    {"email":"usuario@usuario.com","clave":"333333"},
+    {"email":"anonimo@anonimo.com","clave":"444444"},
+    {"email":"tester@tester.com","clave":"555555"}
   ];
+
 
   constructor(
     private router: Router,

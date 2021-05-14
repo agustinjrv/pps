@@ -1,6 +1,4 @@
-ALARMA DE ROBO
+a todas quitar pantalla blanca
 
-cambiar sonidos
-y subir a git
+revisar que funcione alarma de robo toque un par de cosas puede haberse roto
 
-cambiar splash estatico

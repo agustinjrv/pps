@@ -27,6 +27,7 @@ import { Vibration } from '@ionic-native/vibration/ngx';
   providers: [
     ScreenOrientation,
     DeviceMotion,
+  
     
     Flashlight,
     Vibration,
