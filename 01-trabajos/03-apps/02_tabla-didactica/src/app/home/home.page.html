@@ -1,19 +1,35 @@
+
+
+
+
+
+
+
+
+
+
 <ion-content >
   <body style="background-color: #0d37f3;">
-    
 
-      <ion-fab vertical="bottom" horizontal="end"  slot="fixed" style="margin-bottom: 13%;" >
+    <ion-fab vertical="bottom" horizontal="end"  slot="fixed" >
+
+      <ion-fab-button color="primary"  (click)="LogOut()" >
+        <ion-icon src='assets/puerta.svg'></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+
+      <ion-fab vertical="top" horizontal="start"  slot="fixed" >
         <ion-fab-button  size="small">
           <ion-icon src={{manejadora.pathFotoJuego}}></ion-icon>
         </ion-fab-button>  
-        <ion-fab-list side="start">
+        <ion-fab-list side="end">
           <ion-fab-button (click)="CambiarJuego('colores')"><ion-icon src="assets/colores/icon.svg"></ion-icon></ion-fab-button>
           <ion-fab-button (click)="CambiarJuego('numeros')"><ion-icon src="assets/numeros/icon.svg"></ion-icon></ion-fab-button>
           <ion-fab-button (click)="CambiarJuego('animales')"><ion-icon src="assets/animales/icon.svg"></ion-icon></ion-fab-button>      
         </ion-fab-list>
       </ion-fab>
     
-      <ion-fab vertical="bottom" horizontal="end"  slot="fixed" >
+      <ion-fab vertical="top" horizontal="end"  slot="fixed"   >
         <ion-fab-button  size="small">
           <ion-icon src={{manejadora.pathFotoIdioma}}></ion-icon>
         </ion-fab-button>  
@@ -29,7 +45,7 @@
         <ion-grid >      
           <ion-row >
             <ion-col size="6" size-lg *ngFor="let unCuadro of manejadora.listaCuadros">
-                <ion-button color={{unCuadro.colorBoton}} expand="block" style="width: 100%; height: 170px;" (click)="Reproducir(unCuadro.pathSonido)">
+                <ion-button color={{unCuadro.colorBoton}}  (click)="Reproducir(unCuadro.pathSonido)">
                   <ion-grid>
                     <ion-row *ngIf="!(manejadora.tipoJuego==0 || manejadora.tipoJuego=='colores')">
                       <ion-col>

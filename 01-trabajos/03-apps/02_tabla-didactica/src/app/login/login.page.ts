@@ -66,6 +66,6 @@ export class LoginPage implements OnInit {
     console.log('Iniciando login rapido, perfil Tester.' + '['+ Date.now() + ']');
 
   }
-
+  
 
 }

@@ -49,7 +49,7 @@ export class PrincipalPage implements OnInit {
   
   async presentToast() {
     const toast = await this.toastController.create({
-      message: 'Ese codigo ya fue redimido.',
+      message: 'Ese codigo ya fue ingresado no se puede volver a agregar.',
       duration: 2000,
       position: 'bottom',
       cssClass: 'toast-custom-class'
@@ -76,7 +76,7 @@ export class PrincipalPage implements OnInit {
   ngOnInit() { 
     setTimeout(()=>{
       this.mostrarCredito();
-    },1000);
+    },1500);
   }
 
 

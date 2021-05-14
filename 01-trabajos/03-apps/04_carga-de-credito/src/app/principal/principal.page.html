@@ -28,12 +28,12 @@
 
   </section>  
 
-  <section style="height: 50px;">
-    <ion-card color="light">
-      <div *ngIf="scannedBarCode"><!--scannedBarCode-->
-        <ion-item color="light">
-          Cantidad a cargar: <strong>{{ this.monto }}</strong>
-        </ion-item>
+  <section style="height: 50px; ">
+    <ion-card style='background-color:rgba(255, 255, 255, 0.63)'>
+      <div *ngIf="true"><!--scannedBarCode-->
+        <div style="height: 30px;">
+          <h4 style="margin-left: 5%;">Cantidad a cargar: <strong>{{ this.monto }}</strong></h4>
+        </div>
         <div >
           <ion-button color="dark" expand="block" class="ml-3 mr-3" (click)="CargarCredito()">
             Confirmar
