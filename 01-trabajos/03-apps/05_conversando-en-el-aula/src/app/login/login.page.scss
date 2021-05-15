@@ -1,32 +1,56 @@
-.container {
-    display: flex;
-    flex-direction: column;    
-    height: 100%;  
-    background-color:rgb(252, 0, 105);
+
+
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
 }
 
-.backgroundInput
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+#msjError {
+
+color: red;
+animation: shakeX 1s;
+
+}
+.my-custom-menu {
+  --width: 500px;
+}
+
+ion-content.background {
+  --background: url('../../assets/bmg.jpg')  center center fixed repeat;
+  background-size: contain;
+}
+
+
+.titulo
 {
-    background: red;
+  font-size:40px;
+font-family: learn;
+color:#4e4528;
+
 }
 
-.margin{
-    margin-left: 2%;
-    margin-right: 2%;
+.btnLogin
+{
+  color: rgb(0, 0, 0);
+
 }
 
-ion-content.background{
-   
-}
-
-.ripple-parent {
-    position: relative;
-    overflow: hidden;
-  }
-
-
+.closed {
+  color:rgb(0, 0, 0);
   
-  @-webkit-keyframes shake-horizontal{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}10%,30%,50%,70%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}20%,40%,60%{-webkit-transform:translateX(10px);transform:translateX(10px)}80%{-webkit-transform:translateX(8px);transform:translateX(8px)}90%{-webkit-transform:translateX(-8px);transform:translateX(-8px)}}@keyframes shake-horizontal{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}10%,30%,50%,70%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}20%,40%,60%{-webkit-transform:translateX(10px);transform:translateX(10px)}80%{-webkit-transform:translateX(8px);transform:translateX(8px)}90%{-webkit-transform:translateX(-8px);transform:translateX(-8px)}}
-.animacion{
-    -webkit-animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both;animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both;
+  --highlight-background: transparent;
 }

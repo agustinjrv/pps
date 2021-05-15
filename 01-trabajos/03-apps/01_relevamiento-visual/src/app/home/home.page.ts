@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { PhotoService } from '../services/photo.service';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,16 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private router:Router) {}
+
+  cosasLindas(){
+    localStorage.setItem('lindo','true');
+    this.router.navigateByUrl('/lista/cosasLindas')
+  }
+
+  cosasFeas(){
+    localStorage.setItem('lindo','false');
+    this.router.navigateByUrl('/lista/cosasFeas')
+  }
 
 }

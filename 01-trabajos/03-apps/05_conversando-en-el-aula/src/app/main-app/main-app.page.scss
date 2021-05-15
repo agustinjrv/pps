@@ -1,0 +1,109 @@
+ion-content{
+    --background: url('../../assets/fondoChat.jpg')
+}
+
+ion-card{
+    *{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    border-radius: 5px;
+    padding: 0px;
+    background-color: rgb(0, 193, 241);
+}
+
+
+ ion-footer, ion-header{
+    *{
+        color: white;
+    }
+}
+
+ion-card-header{
+    background-color: rgb(0, 193, 241);
+
+    
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+
+
+#iconBack{
+    font-size: 200%;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+}
+
+#titleGroup{
+    position: absolute;
+    top: 50%;
+    font-size: 170%;
+    transform: translateY(-15px);
+    margin: 0;
+    display: inline-block;
+    margin-left: 140px;
+    font-weight: bold;
+}
+
+.NombreMensajeRecibido{
+    color: rgb(227, 233, 233);
+}
+
+
+.miMensaje{ 
+    
+    background-color: #2d911a;
+    color: rgb(0, 0, 0);
+}
+
+.mensajeRecibido{
+    background-color: rgb(0, 193, 241);
+    color: rgb(0, 0, 0);
+
+    font-size: 15px;
+}
+
+.infoNombre{
+    font-size: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.info{
+    position: relative;
+    float:right;
+    font-size: 9px;
+    margin-bottom: 0px;
+    color: rgb(0, 0, 0);
+}
+
+#sendButton{
+    position: relative;
+    float: right;
+    font-size: 200%;
+    transform: translate(3px);
+    margin-top: 3px;
+    margin-right: 5px;
+}
+
+
+
+
+ion-input{
+    display: inline-block;
+    max-width: 80%;
+}
+
+
+
+
+ion-grid{
+    *{
+        margin-top: 1px;
+    }
+}
+ion-row,ion-col{
+    margin: 0px;
+    padding: 0px;
+}
+

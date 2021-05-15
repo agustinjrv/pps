@@ -1,23 +1,30 @@
 
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-    background-color: #5d06cf;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background-color: #A12732;
 }
 
 
- @-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+@-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
 .animacionTexto
 {
-    -webkit-animation:text-focus-in .5s cubic-bezier(.55,.085,.68,.53) both;animation:text-focus-in .5s cubic-bezier(.55,.085,.68,.53) both;
+  -webkit-animation:text-focus-in .5s cubic-bezier(.55,.085,.68,.53) both;animation:text-focus-in .5s cubic-bezier(.55,.085,.68,.53) both;
+  color:white;
 }
 
 
 @-webkit-keyframes fade-out{0%{opacity:1}100%{opacity:0}}@keyframes fade-out{0%{opacity:1}100%{opacity:0}}
 .animacion{
-    -webkit-animation:fade-out 1s ease-out 2s both;animation:fade-out 1s ease-out 2s both;
+  -webkit-animation:fade-out 1s ease-out 2s both;animation:fade-out 1s ease-out 2s both;
+ 
+}
+
+.imagen{
+  padding-top: 5%;
+  background: rgb(128, 128, 128);
 }

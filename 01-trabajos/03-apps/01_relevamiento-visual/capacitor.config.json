@@ -1,12 +1,12 @@
 {
-  "appId": "relevamiento.visual-AJR",
-  "appName": "Relevamiento visual",
+  "appId": "com.releVisual.ls",
+  "appName": "relevamientoVisual",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
   "plugins": {
     "SplashScreen": {
-      "launchShowDuration": 3000
+      "launchShowDuration": 2500
     }
   },
   "cordova": {}

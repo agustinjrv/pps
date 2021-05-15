@@ -1,36 +1,70 @@
 
+<ion-content [fullscreen]="true" padding class="background" >
 
-<ion-content [fullscreen]="true" class="background" > 
-
-  <div class="container">
-
-    <ion-item style="margin-top: 10%;" class="margin animacion" color="light" >
-      <ion-label position="stacked">Correo</ion-label>
-      <ion-input type="email" placeholder="Ingrese su Correo"  [(ngModel)]="user.email"></ion-input>
-    </ion-item>
     
-    <ion-item  class="margin animacion" color="light" >
-      <ion-label position="stacked">Password</ion-label>
-      <ion-input type="Password" placeholder="Ingrese su contraseña" [(ngModel)]="user.password"></ion-input>
-    </ion-item>
-
-
-    <section style="margin-top: 5%;">
-      <div align="center" style="margin-bottom: 10%;">
-        <img src="assets/splashAnimado.svg" alt=""  style="width: 100px;height: 100px; border-radius: 50%; background-color: white; ">
-      </div>
       
-      <ion-row>
-        <ion-col>
-          <ion-button class="margin" color="light" size="block" (click)="onLogin()">Ingresar</ion-button>
-          <ion-button class="margin" color="dark" size="block">Registrarse</ion-button>
-        </ion-col>
+    
+        <div id="container" >
+
+          <div align='center'>
+            <strong >
+              <h1 class="titulo animate__animated animate__backInDown">Bienvenido</h1>
+            </strong>
+          </div>
+          
+
+            <section>
+              <ion-item>
+                <ion-label position="stacked">Correo</ion-label>
+                <ion-input type="email" [(ngModel)]="user.email"></ion-input> 
+              </ion-item>
+              <br>
+
+              <ion-item>
+                <ion-label position="stacked">Clave</ion-label>
+              <ion-input type="password" [(ngModel)]="user.password" ></ion-input> 
+              </ion-item>
+              <br>
+
+
+              <div id="errorLogin">
+                <h6 id="msjError"></h6>
+              </div>
+            </section>
+              
         
-      </ion-row>
+        
+
+          <br>
+
+          <ion-button color="primary"  expand="block" (click)=onLogin() class=" btnLogin animate__animated  animate__backInUp ">Iniciar Sesión</ion-button>
+          
+          <ion-button color="success"  expand="block" (click)="mostrarBotones()" class=" btnLogin animate__animated  animate__backInUp ">Botones Inicio rapido</ion-button>
       
-    </section>
-  
-  </div>
+          <div *ngIf="this.mostrar" style="margin-top: 5%;">
+          <ion-button color="warning"  expand="block" (click)=login_Admin() class=" btnLogin animate__animated  animate__backInRight ">Inicio Admin</ion-button>
+          <ion-button color="secondary"  expand="block" (click)=login_Invitado() class=" btnLogin animate__animated  animate__backInRight ">Inicio Invitado</ion-button>
+          <ion-button color="dark"  expand="block" (click)=login_Usuario() class=" btnLogin animate__animated  animate__backInRight ">Inicio Usuario</ion-button>
+          <ion-button color="medium"  expand="block" (click)=login_Anonimo() class=" btnLogin animate__animated  animate__backInRight ">Inicio Anonimo</ion-button>
+          <ion-button color="danger"  expand="block" (click)=login_Tester() class=" btnLogin animate__animated  animate__backInDown ">Inicio Tester</ion-button>
+        </div> 
+
+
+
+
+          <br>
+          <br>
+
+
+
+        </div>
 
 </ion-content>
 
+
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
