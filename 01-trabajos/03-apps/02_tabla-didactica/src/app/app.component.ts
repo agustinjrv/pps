@@ -22,12 +22,12 @@ export class AppComponent implements OnInit{
     this.platform.ready().then(() => {
       setTimeout(() => {
         SplashScreen.hide();
-   
-      }, 500);
+        
+      }, 2000);
     });
   }
   ngOnInit()
   {
-    this.router.navigateByUrl('home');
+    this.router.navigateByUrl('splash-animado');
   }
 }

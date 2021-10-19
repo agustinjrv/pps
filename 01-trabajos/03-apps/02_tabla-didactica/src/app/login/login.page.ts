@@ -36,6 +36,7 @@ export class LoginPage implements OnInit {
     }
   }
 
+
   login_Admin(){
     this.user.email = "admin@admin.com";
     this.user.password = '111111';
