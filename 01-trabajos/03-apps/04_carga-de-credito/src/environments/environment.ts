@@ -4,14 +4,15 @@
 
 export const environment = {
   production: true,
-  firebaseConfig: {
-    apiKey: "AIzaSyCvm5X5raW3y-rrPvP9kPeHazxdki_KYDY",
-    authDomain: "apppps-bc877.firebaseapp.com",
-    projectId: "apppps-bc877",
-    storageBucket: "apppps-bc877.appspot.com",
-    messagingSenderId: "333845932521",
-    appId: "1:333845932521:web:f13d413fe4790b3d744378"
-  },
+  firebaseConfig : {
+    apiKey: "AIzaSyDSLkOx-hAuxTMN6sQVnvaY5geYce52Mq4",
+    authDomain: "despertador-gps-49938.firebaseapp.com",
+    projectId: "despertador-gps-49938",
+    storageBucket: "despertador-gps-49938.appspot.com",
+    messagingSenderId: "797208257055",
+    appId: "1:797208257055:web:cf4d21d4f89e799e0aab2a",
+    measurementId: "G-2K7P2WRB1K"
+  }
 };
 
 /*

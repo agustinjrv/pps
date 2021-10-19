@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import {AngularFireList,AngularFireDatabase} from '@angular/fire/database'
+import { Router } from '@angular/router';
 import { Usuario } from '../models/usuario';
 @Injectable({
   providedIn: 'root'
@@ -9,7 +10,7 @@ export class UsuariosService {
   listaUsuarios:Usuario[];
   usuarioRef: AngularFireList<Usuario>=null;
 
-  constructor(private db:AngularFireDatabase) { 
+  constructor(private db:AngularFireDatabase,private router:Router) { 
     this.usuarioRef= db.list(this.dbPath);
     this.usuarioRef.valueChanges().subscribe(usuarios=>{
       this.listaUsuarios=usuarios;
@@ -36,7 +37,10 @@ export class UsuariosService {
 
   deslogearUsuario(){
     localStorage.removeItem("user");
-    location.assign('login');
+    
+    this.router.navigateByUrl('/login');
+    
+
   }
 
   verifyUsuarios(unUsuario:Usuario):boolean{

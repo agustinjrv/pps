@@ -22,7 +22,7 @@ import { Vibration } from '@ionic-native/vibration/ngx';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot({ animated: false }), AppRoutingModule,
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,
   AngularFireAuthModule, AngularFireModule.initializeApp(environment.firebaseConfig)],
   providers: [
     ScreenOrientation,

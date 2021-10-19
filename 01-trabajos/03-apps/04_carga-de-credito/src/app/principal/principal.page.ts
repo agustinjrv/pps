@@ -92,7 +92,7 @@ export class PrincipalPage implements OnInit {
     this.unUsuario.cargo100 = 0;
     this.unUsuario.cargo50 = 0;
     console.log(this.unUsuario)
-    this.router.navigateByUrl('/');
+    this.router.navigateByUrl('/login');
 
 
   }

@@ -23,11 +23,12 @@ export class AppComponent {
     this.platform.ready().then(() =>{
       setTimeout(() => {
         SplashScreen.hide();
-      }, 2000);
+        this.router.navigate(["/splash"]);
+      }, 4000);
     });
   }
 
   ngOnInit(){
-    this.router.navigate(["/splash"],{replaceUrl: true});
+    
   }
 }

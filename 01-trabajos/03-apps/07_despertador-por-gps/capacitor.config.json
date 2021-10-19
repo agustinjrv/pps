@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "07_despertador-por-gps",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

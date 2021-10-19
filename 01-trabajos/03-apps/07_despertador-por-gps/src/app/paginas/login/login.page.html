@@ -1,0 +1,56 @@
+
+<ion-content [fullscreen]="true" padding class="background">
+  <div class="login card">
+    <p class="aligncenter"></p>
+    <div class="card-body">
+      <h1 style="text-align: center ;" class="text-white">Bienvenido</h1>
+      <form novalidate (ngSubmit)="onLogin()" [formGroup]="userForm">
+        <fieldset>
+          <div class="form-group">
+            <label for="exampleInputEmail1" style="color:white">Correo</label>
+            <input type="email" class="form-control" id="email" placeholder="Correo Electrónico" formControlName="email"
+              [class]="isValidField('email')" />
+            <div class="invalid-feedback" style="font-family: sans-serif; color: white;">
+              <span style="color:white" *ngIf="userForm.get('email').errors?.required">
+                *Debe ingresar un correo
+              </span>
+
+            </div>
+          </div>
+          <div class="form-group mt-2">
+            <label for="password" style="color: white;">Contraseña</label>
+            <input type="password" class="form-control" id="password" placeholder="Contraseña"
+              formControlName="password" [class]="isValidField('password')" />
+            <div class="invalid-feedback" style="font-family: sans-serif;">
+              <span style="color:white" *ngIf="userForm.get('password').errors?.required">
+                *Debe ingresar una contraseña
+              </span>
+            </div>
+          </div>
+          
+          <button type="submit"  class="btn btn-light btn-block rounded-pill" type="button" (click)="onLogin()">Ingresar</button>
+          <button class="btn btn-light btn-block rounded-pill" type="button" (click)="irRegistro()">Registro</button>
+        
+
+
+        </fieldset>
+      </form>
+
+
+      <ion-fab vertical="top" horizontal="end" slot="fixed">
+        <ion-fab-button color="light">
+          <ion-icon name="person"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-list side="bottom">
+          <ion-fab-button (click)="this.Login('pepe@gmail.com','123456')">
+            <ion-icon src="assets/animales/mono.svg"></ion-icon>
+          </ion-fab-button>
+          <ion-fab-button (click)="this.Login('homero@gmail.com','123456')">
+            <ion-icon src="assets/animales/leon.svg"></ion-icon>
+          </ion-fab-button>
+        </ion-fab-list>
+      </ion-fab>
+
+    </div>
+  </div>
+</ion-content>
